@@ -22,7 +22,7 @@ setup(
         CUDAExtension('correlation_cuda', [
             'correlation_cuda.cc',
             'correlation_cuda_kernel.cu'
-        ], extra_compile_args={'cxx': cxx_args, 'nvcc': nvcc_args, 'cuda-path': ['/usr/local/cuda-9.0']})
+        ], extra_compile_args={'cxx': cxx_args, 'nvcc': nvcc_args, 'cuda-path': ['/usr/local/cuda/']})
     ],
     cmdclass={
         'build_ext': BuildExtension
