@@ -43,7 +43,7 @@
            "lr": 0.0001,
            "mask_st": true,
            "momentum": 0.9,
-           "n_gpu": 1,
+           "n_gpu": 3,
            "optim": "adam",
            "ot_compact": 50,
            "ot_fast": true,
