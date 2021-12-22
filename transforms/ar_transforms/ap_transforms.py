@@ -2,6 +2,7 @@ import numpy as np
 import torch
 from torchvision import transforms as tf
 from PIL import ImageFilter
+from . import functional as F
 
 
 def get_ap_transforms(cfg):
