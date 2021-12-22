@@ -25,7 +25,7 @@ def bias_parameters(module):
 
 
 def load_checkpoint(model_path):
-    weights = torch.load(model_path,map_location='cpu')
+    weights = torch.load(model_path)
     epoch = None
     if 'epoch' in weights:
         epoch = weights.pop('epoch')
