@@ -31,7 +31,8 @@ class TrainFramework(BaseTrainer):
             if self.i_epoch == self.cfg.stage1.epoch:
                 self.loss_func.cfg.update(self.cfg.stage1.loss)
 
-        for i_step, data in enumerate(self.train_loader):
+        #for i_step, data in enumerate(self.train_loader):
+        for i_step, (data, labels) in enumerate(self.train_loader):
             if i_step > self.cfg.epoch_size:
                 break
             # read data to device
